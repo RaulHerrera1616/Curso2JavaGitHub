@@ -30,18 +30,26 @@ public class Libro {
         isbn = leer.nextLine();
         System.out.println("Titulo: ");
         titulo = leer.nextLine();
-        System.out.println("autor: ");
+        System.out.println("Autor: ");
         autor = leer.nextLine();
         System.out.println("Numero de Paginas: ");
         numpag = leer.nextInt();
         
-    }
+        
+           }
+    
+    
     public void InformarLibro(){
         System.out.println("ISBN: "+isbn);
         System.out.println("Titulo: "+titulo);
         System.out.println("Autor: "+autor);
         System.out.println("Numero de Paginas: "+numpag);
-    }
+   }
+
+//    @Override
+//    public String toString() {
+//        return "Libro{" + "isbn=" + isbn + ", titulo=" + titulo + ", autor=" + autor + ", numpag=" + numpag + '}';
+//    }
   
 }
 /*
