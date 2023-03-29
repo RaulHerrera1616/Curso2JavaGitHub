@@ -1,5 +1,6 @@
 
-package Ejercicio4;
+package MainEj4;
+
 
 import Ejercicio4.Rectangulo;
 

@@ -74,10 +74,8 @@ public class Punto {
     }
     
     public double distanciaPunto(){
-        
-        double disPunto =  Math.sqrt(((x2-x1)*(x2-x1))+((y2-y1)*(y2-y1)));
-        
-        return disPunto;
+               
+        return Math.sqrt(Math.pow(x2-x1,2)+Math.pow(y2-y1,2));
     }
     
 }

@@ -1,5 +1,6 @@
 
-package Ejercicio3;
+package MainEj3;
+
 
 import Ejercicio3.Operacion;
 

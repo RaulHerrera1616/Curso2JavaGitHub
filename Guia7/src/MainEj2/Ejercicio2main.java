@@ -1,5 +1,6 @@
 
-package Ejercicio2;
+package MainEj2;
+
 
 import Ejercicio2.Circunferencia;
 
