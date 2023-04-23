@@ -45,11 +45,9 @@ public class FraccionService {
         } else {
             System.out.println("Resultado: " + numerador + "/" + denominador);
             int[] resSimp = simplificar(numerador, denominador);
-            if (numerador == 0 || denominador == 0) {
+            if (resSimp[0] == 0 || resSimp[1] == 0) {
                 System.out.println("Resultado: " + numerador);
-            } else if (numerador == denominador) {
-                System.out.println("Resultado: " + numerador / +denominador);
-            } else {
+            }else {
                 System.out.println("Resultado simplificado: " + resSimp[0] + "/" + resSimp[1]);
             }
         }
@@ -64,7 +62,7 @@ public class FraccionService {
             denominador = f.getDenominador1();
         } else {
             denominador = f.getDenominador1() * f.getDenominador2();
-            numerador = f.getNumerador1() * f.getDenominador2() + f.getNumerador2() * f.getDenominador1();
+            numerador = f.getNumerador1() * f.getDenominador2() - f.getNumerador2() * f.getDenominador1();
         }
 
         if (numerador == 0 || denominador == 0) {
@@ -74,11 +72,9 @@ public class FraccionService {
         } else {
             System.out.println("Resultado: " + numerador + "/" + denominador);
             int[] resSimp = simplificar(numerador, denominador);
-            if (numerador == 0 || denominador == 0) {
+            if (resSimp[0] == 0 || resSimp[1] == 0) {
                 System.out.println("Resultado: " + numerador);
-            } else if (numerador == denominador) {
-                System.out.println("Resultado: " + numerador / +denominador);
-            } else {
+            }else {
                 System.out.println("Resultado simplificado: " + resSimp[0] + "/" + resSimp[1]);
             }
         }
@@ -95,11 +91,9 @@ public class FraccionService {
         } else {
             System.out.println("Resultado: " + numerador + "/" + denominador);
             int[] resSimp = simplificar(numerador, denominador);
-            if (numerador == 0 || denominador == 0) {
+            if (resSimp[0] == 0 || resSimp[1] == 0) {
                 System.out.println("Resultado: " + numerador);
-            } else if (numerador == denominador) {
-                System.out.println("Resultado: " + numerador / +denominador);
-            } else {
+            }else {
                 System.out.println("Resultado simplificado: " + resSimp[0] + "/" + resSimp[1]);
             }
         }
@@ -116,11 +110,9 @@ public class FraccionService {
         } else {
             System.out.println("Resultado: " + numerador + "/" + denominador);
             int[] resSimp = simplificar(numerador, denominador);
-            if (resSimp[0] == 0 || resSimp[1] == 0 || resSimp[1]==1) {
+            if (resSimp[0] == 0 || resSimp[1] == 0) {
                 System.out.println("Resultado: " + numerador);
-            } else if (resSimp[0] == resSimp[1]) {
-                System.out.println("Resultado: " + numerador / +denominador);
-            } else {
+            }else {
                 System.out.println("Resultado simplificado: " + resSimp[0] + "/" + resSimp[1]);
             }
         }
