@@ -246,38 +246,31 @@ public class Quincena1 {
     public double totalBasico() {
 
         double res = numeroLegajo();
+        valorHora = res / 8;
 
-        valorHora = res / 8;//Valor de la Hora        
-
-        System.out.println("Ingrese sus dias trabajados: ");//dias trabajados
+        System.out.println("Ingrese sus dias trabajados:");
         jornalTrabajado = leer.nextInt();
-        totalBruto = jornalTrabajado * res;//Remuneracion por el total de dias Trabajados
+        totalBruto = jornalTrabajado * res;
 
-        System.out.println("Digite los dias feriados: ");//dias Feriados
-        diasFer = leer.nextInt();
-        totalFeriado = diasFer * res;
+        System.out.println("Digite los dias feriados:");
+        totalFeriado = leer.nextInt() * res;
 
-        System.out.println("Ingrese el total de horas extras simples: ");//dias Feriados
-        horaExSim = leer.nextInt();
-        totalHoraSim = (valorHora * 1.5) * horaExSim;//Remuneracion por horas extras al 50%
+        System.out.println("Ingrese el total de horas extras simples:");
+        totalHoraSim = (leer.nextInt() * valorHora * 1.5);
 
-        System.out.println("Ingrese el total de horas extras al cien: ");//dias Feriados
-        horaExCien = leer.nextInt();
-        totalHoraExCien = (valorHora * 2) * horaExCien;//Remuneracion por horas extras al 100%
+        System.out.println("Ingrese el total de horas extras al cien:");
+        totalHoraExCien = (leer.nextInt() * valorHora * 2);
 
-        System.out.println("Digite sus años de escalafon: ");//dias Feriados
+        System.out.println("Digite sus años de escalafon:");
         antiguedad = leer.nextInt();
 
-        sueldoBruto = totalBruto + totalFeriado + totalHoraSim + totalHoraExCien;//Bruto total
+        sueldoBruto = totalBruto + totalFeriado + totalHoraSim + totalHoraExCien;
         System.out.println("Sueldo Bruto: " + sueldoBruto);
 
-        descuento = (totalBruto + totalFeriado + totalHoraSim + totalHoraExCien) * 0.18;//Descuentos
+        descuento = sueldoBruto * 0.18;
         System.out.println("Descuentos: " + descuento);
 
-        totalDescuento = sueldoBruto - descuento;//Sueldo con descuento
-
-        return totalDescuento;
-
+        return sueldoBruto - descuento;
     }
 
 }

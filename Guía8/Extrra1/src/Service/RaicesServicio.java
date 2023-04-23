@@ -21,7 +21,7 @@ public class RaicesServicio {
     }
 
     public boolean tieneRaices(Raices r) {
-        return getDiscriminante(r) >= 0;
+        return getDiscriminante(r) > 0;
     }
 
     public boolean tieneRaiz(Raices r) {

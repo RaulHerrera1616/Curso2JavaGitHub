@@ -1,9 +1,9 @@
-package extrra1;
+package extra1;
 
 import Entidad.Raices;
 import Service.RaicesServicio;
 
-public class Extrra1 {
+public class Extra1 {
 
     public static void main(String[] args) {
 
